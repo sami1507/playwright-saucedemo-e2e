@@ -1,0 +1,23 @@
+{
+  "name": "playwright-saucedemo-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "End-to-end test framework for the SauceDemo storefront: Playwright, TypeScript, page objects, custom fixtures and CI reporting.",
+  "license": "MIT",
+  "author": "sami1507",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sami1507/playwright-saucedemo-e2e.git"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
